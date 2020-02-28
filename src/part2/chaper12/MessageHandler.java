@@ -6,7 +6,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class MessageHandler {
-
+    /*
+    * 封装消息多线程方式发送出去
+    * */
     private final Executor executor = Executors.newFixedThreadPool(5);
     private static final Random r = new Random(System.currentTimeMillis());
     public void request (Message message){

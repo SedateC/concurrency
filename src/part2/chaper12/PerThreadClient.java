@@ -1,7 +1,6 @@
 package part2.chaper12;
 
-import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
+
 import java.util.stream.IntStream;
 
 public class PerThreadClient {
