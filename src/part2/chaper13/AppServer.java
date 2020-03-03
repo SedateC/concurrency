@@ -39,9 +39,20 @@ public class AppServer extends Thread{
                 Socket socketClient = serverSocket.accept();
                 ClientHandler clientHandler =  new ClientHandler(socketClient);
                 executor.submit(clientHandler);
+                this.clientHandlers.add(clientHandler);
             }
         }catch (IOException e){
             throw new RuntimeException(e);
+        }finally {
+            dispose();
         }
+    }
+
+    private void dispose() {
+    }
+
+    public void shutdown(){
+        this.start = false;
+        this.interrupt();
     }
 }

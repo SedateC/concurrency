@@ -18,4 +18,8 @@ public class ClientHandler extends Thread{
     public void run() {
 
     }
+
+    public void shutdown(){
+
+    }
 }
