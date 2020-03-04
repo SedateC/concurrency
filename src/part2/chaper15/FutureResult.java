@@ -14,7 +14,7 @@ public class FutureResult implements Result {
         this.notifyAll();
     }
     @Override
-    public Object getResultValue() {
+    public synchronized Object getResultValue() {
         while (!ready){
             try {
                 this.wait();

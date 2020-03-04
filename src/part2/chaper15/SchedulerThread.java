@@ -8,7 +8,7 @@ package part2.chaper15;
 public class SchedulerThread extends Thread {
     private final ActivationQueue activationQueue ;
 
-    public SchedulerThread(ActivationQueue activationQueue) {
+    public                                                                                    SchedulerThread(ActivationQueue activationQueue) {
         this.activationQueue = activationQueue;
     }
 

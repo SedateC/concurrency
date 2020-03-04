@@ -37,7 +37,7 @@ public class ActivationQueue {
                 e.printStackTrace();
             }
         }
-        MethodRequest methodRequest =  methodQueue.getFirst();
+        MethodRequest methodRequest =  methodQueue.removeFirst();
         this.notifyAll();
         return  methodRequest;
     }
