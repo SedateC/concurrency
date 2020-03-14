@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="classLoader" target="1.5" />
+      <module name="classLoader" target="8" />
       <module name="concurrency" target="1.8" />
     </bytecodeTargetLevel>
   </component>
