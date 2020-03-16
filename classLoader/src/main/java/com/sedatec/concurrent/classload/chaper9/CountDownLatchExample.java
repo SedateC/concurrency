@@ -9,6 +9,9 @@ import java.util.concurrent.*;
  * @Date 2020/3/16
  * 计数器门阀
  * 并行执行过程 线程之间相互通讯工具类
+ *  * A synchronization aid that allows one or more threads to wait until
+ * a set of operations being performed in other threads completes.
+ * 相当于一个裁判员
  **/
 public class CountDownLatchExample {
     private static Random random = new Random(System.currentTimeMillis());
